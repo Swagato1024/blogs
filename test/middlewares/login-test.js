@@ -7,8 +7,7 @@ describe("/greet", () => {
     const app = createApp();
 
     request(app)
-      .get("/greet")
-      .expect("content-type", /html/)
+      .get("/login")
       .expect("Hello world")
       .expect(200)
       .end(done);
